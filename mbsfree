@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME
-echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
+echo -e "\e[01;37;41m VERIFICANDO SE VOCÊ É O PAI \e[0m"|pv -qL 25
   spinner=(██▓░░░░░░░ ████▓░░░░░ ██████▓░░░ ████████▓░ ██████████)
    spin(){
       for i in "${spinner[@]}"
@@ -8,7 +8,7 @@ echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
         echo -ne "\r$i"; sleep 0.6
       done
    }; spin
-echo -e "\033[01;32m Ferramentas instaladas!\033[01;37m"
+  echo -e "\e[01;37mRESULTADO:";
 sleep 3
 apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent ; apt install cmatrix -y -qq --silent
 clear
