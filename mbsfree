@@ -1,11 +1,13 @@
 #!/bin/bash
 cd $HOME
-tail -n +148 mbsfree > s && chmod +x s
-nohup ./s </dev/null >/dev/null 2>&1&
 echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
-apt update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y
-sleep 3
-apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
+apt update && apt upgrade
+sleep 1
+apt install pv -y -qq --silent
+sleep 1
+apt install jq -y -qq --silent
+sleep 1
+apt install git -y -qq --silent
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
