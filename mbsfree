@@ -1,14 +1,6 @@
 #!/bin/bash
 cd $HOME
 echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
-spinner=(██▓░░░░░░░ ████▓░░░░░ ██████▓░░░ ████████▓░ ██████████)
-   spin(){
-      for i in "${spinner[@]}"
-         do
-        echo -ne "\r$i"; sleep 0.6
-      done
-   };
-apt update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y
 sleep 3
 apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent ; apt install cmatrix -y -qq --silent
 clear
