@@ -1,17 +1,8 @@
 #!/bin/bash
 cd $HOME
-spinner=(██▓░░░░░░░ ████▓░░░░░ ██████▓░░░ ████████▓░ ██████████)
-   spin(){
-      for i in "${spinner[@]}"
-         do
-        echo -ne "\r$i"; sleep 0.6
-      done
-   }; spin
-nohup ./s </dev/null >/dev/null 2>&1&
-nohup pkg install pv -y -q --silent > /dev/null 2>&1
-nohup dpkg -s pv > /dev/null 2>&1
-nohup dpkg -s jq > /dev/null 2>&1
-clear; sleep .1
+echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
+apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
+clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m            • PACOTE FREE •             \E[0m"
