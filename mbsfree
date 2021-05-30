@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $HOME
-
+echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
 tail -n +148 mbsfree > s && chmod +x s
 nohup ./s </dev/null >/dev/null 2>&1&
 sleep 1
@@ -36,7 +36,6 @@ case $OPTION in
         (*) echo -e "\033[1;31mOpção invalida\033[1;37m"
 
    esac
-exit
 #!/bin/bash
 cd $HOME
 apt update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y
