@@ -2,6 +2,7 @@
 yes| termux-setup-storage > /dev/null 2>&1
 unset LD_PRELOAD > /dev/null 2>&1
 cd $HOME
+
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
