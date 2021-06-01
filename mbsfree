@@ -12,8 +12,6 @@ echo -e "\033[01;32m   Solicitando Permissão de armazenamento!\033[01;37m"
 rm -rf storage; termux-setup-storage 
 sleep 2
 clear
-echo -e "\033[01;32m   Instalando ferramentas necessarias!\033[01;37m"
-sleep 1
 echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
 sleep 2
 echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
