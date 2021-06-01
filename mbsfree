@@ -8,17 +8,19 @@ echo -e "\033[01;32m   Permissão de armazenamento necessaria!\033[01;37m"
 sleep 1
 echo -e "\033[01;32m   Solicitando Permissão de armazenamento!\033[01;37m"
 rm -rf storage; termux-setup-storage 
-sleep 1
+sleep 2
 clear
 echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
 sleep 2
+pkg update
 echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
 sleep 1
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
 pkg install pv -y -qq --silent
 echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
 pkg install jq -y -qq --silent
-sleep 1
+echo -e "\033[01;32m   Instalando WGET!\033[01;37m" 
+sleep 2
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
