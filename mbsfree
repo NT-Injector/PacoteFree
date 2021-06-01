@@ -1,9 +1,14 @@
 #!/bin/bash
 cd $HOME
 clear
-echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
-echo -e "\033[01;32m Permissão de armazenamento necessaria!\033[01;37m"
-sleep 3
+echo ""
+echo ""
+echo ""
+echo -e "\033[01;32m   Permissão de armazenamento necessaria!\033[01;37m"
+sleep 5
+clear
+echo -e "\033[01;32m   Instalando ferramentas necessarias!\033[01;37m"
+sleep 2
 rm -rf storage; termux-setup-storage 
 pkg update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y; apt install pv -y -qq --silent; apt install jq -y -qq --silent; apt install git -y -qq --silent
 clear
