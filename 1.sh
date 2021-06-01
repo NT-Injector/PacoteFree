@@ -1,1 +1,0 @@
-curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/padrao && chmod 777 padrao && ./padrao
