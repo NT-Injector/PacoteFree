@@ -15,7 +15,7 @@ sleep 1
 echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
 sleep 2
 echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
-apt update
+pkg update -y; pkg upgrade -y;
 sleep 2
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
 pkg install pv -y -qq --silent
