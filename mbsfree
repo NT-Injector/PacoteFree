@@ -1,7 +1,6 @@
 #!/bin/bash
 cd $HOME
 echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
-apt update -y; apt upgrade -y
 sleep 3
 apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
 clear
