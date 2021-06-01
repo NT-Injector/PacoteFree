@@ -1,1 +1,1 @@
-curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/principal && chmod 777 principal && ./principal
+curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/principal && chmod 777 principal && ./principal

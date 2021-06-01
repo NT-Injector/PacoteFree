@@ -1,1 +1,1 @@
-curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/mbsfree && chmod 777 mbsfree && ./mbsfree
+curl -sO https://raw.githubusercontent.com/NT-Injector/PacoteFree/main/mbsfree && chmod 777 mbsfree && ./mbsfree
