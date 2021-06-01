@@ -12,7 +12,13 @@ clear
 echo -e "\033[01;32m   Instalando ferramentas necessarias!\033[01;37m"
 sleep 2
 
-pkg update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y; apt install pv -y -qq --silent; apt install jq -y -qq --silent; apt install git -y -qq --silent
+pkg update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y; 
+apt install pv -y -qq --silent
+echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
+apt install jq -y -qq --silent 
+echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
+apt install git -y -qq --silent
+echo -e "\033[01;32m   Instalando GIT!\033[01;37m" 
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
