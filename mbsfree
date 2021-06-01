@@ -15,18 +15,12 @@ sleep 1
 echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
 sleep 2
 echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
+apt update
 sleep 2
-apt update;
-apt -qq -o Dpkg::Options::="--force-confnew" upgrade
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
-pkg update;
 pkg install pv -y -qq --silent
 echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
-pkg update;
 pkg install jq -y -qq --silent
-echo -e "\033[01;32m   Instalando WGET!\033[01;37m" 
-pkg update;
-pkg install wget -y -qq --silent
 echo -e "\033[01;32m   Finalizando\033[01;37m" 
 sleep 2
 clear
