@@ -11,14 +11,20 @@ sleep 3
 clear
 echo -e "\033[01;32m   Instalando ferramentas necessarias!\033[01;37m"
 sleep 2
-
-pkg update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y; 
-apt install pv -y -qq --silent
+pkg update
+echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
+sleep 2
+echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
+sleep 2
+apt update; apt -qq -o Dpkg::Options::="--force-confnew" upgrade
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
-apt install jq -y -qq --silent 
+pkg install pv
 echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
-apt install git -y -qq --silent
-echo -e "\033[01;32m   Instalando GIT!\033[01;37m" 
+pkg install jq
+echo -e "\033[01;32m   Instalando WGET!\033[01;37m" 
+pkg install wget
+echo -e "\033[01;32m   Finalizando\033[01;37m" 
+sleep 2
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
