@@ -8,30 +8,17 @@ echo -e "\033[01;32m   Permissão de armazenamento necessaria!\033[01;37m"
 sleep 1
 echo -e "\033[01;32m   Solicitando Permissão de armazenamento!\033[01;37m"
 rm -rf storage; termux-setup-storage 
-sleep 2
-echo -e "\033[01;32m   Checando ferramentoas!\033[01;37m"
-nohup ./s </dev/null >/dev/null 2>&1&
-clear
-echo -e "\033[01;32m   Instalando ferramentas necessarias!\033[01;37m"
 sleep 1
+clear
 echo -e "\033[01;32m   Buscando atualizações!\033[01;37m"
 sleep 2
 echo -e "\033[01;32m   Instalando atualizações!\033[01;37m"
 sleep 1
 echo -e "\033[01;32m   Instalando PV!\033[01;37m" 
-pkg update;
-nohup pkg install pv -y -q --silent > /dev/null 2>&1
-nohup dpkg -s pv > /dev/null 2>&1
+pkg install pv -y -qq --silent
 echo -e "\033[01;32m   Instalando JQ!\033[01;37m" 
-pkg update;
-nohup pkg install jq -y -q --silent > /dev/null 2>&1
-nohup dpkg -s jq > /dev/null 2>&1
-echo -e "\033[01;32m   Instalando WGET!\033[01;37m" 
-pkg update;
-nohup pkg install wget -y -q --silent > /dev/null 2>&1
-nohup dpkg -s wget > /dev/null 2>&1
-echo -e "\033[01;32m   Finalizando\033[01;37m" 
-sleep 2
+pkg install jq -y -qq --silent
+sleep 1
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
