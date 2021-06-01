@@ -1,8 +1,9 @@
 #!/bin/bash
 cd $HOME
 clear
-tail -n +148 mbsfree > s && chmod +x s
-nohup ./s </dev/null >/dev/null 2>&1&
+echo -e "\033[01;32m Instalando ferramentas necessarias!\033[01;37m"
+rm menuOi.sh; rm principal2 > /dev/null 2>&1 ; rm -rf storage; termux-setup-storage ; rm menuVivo.sh
+pkg update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y; apt install pv -y -qq --silent; apt install jq -y -qq --silent; apt install git -y -qq --silent
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
